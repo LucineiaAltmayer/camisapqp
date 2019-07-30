@@ -51,7 +51,7 @@ public class conexao {
 
     public static void main(String[] args) {
         try {
-            getConexao();
+            Connection conexao = getConexao();
             System.out.println("Feito!");
         } catch (SQLException ex) {
             Logger.getLogger(conexao.class.getName()).log(Level.SEVERE, null, ex);
